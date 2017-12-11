@@ -19,6 +19,7 @@ install:
 
 script:
   - "sonar-scanner"
+  - "npm run build"
   - "snyk test"
 
 after_success:
