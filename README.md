@@ -1,5 +1,7 @@
 # All time book search page
 
+[![Build Status](https://travis-ci.org/ferzerkerx/lucene-demo-frontend.svg?branch=master)](https://travis-ci.org/ferzerkerx/lucene-demo-frontend)
+
 ## Dependencies
 - Expects an endpoint on localhost:8080 implemented in this other repository: https://github.com/ferzerkerx/lucene-demo
 
