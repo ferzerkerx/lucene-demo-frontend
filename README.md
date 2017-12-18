@@ -1,6 +1,7 @@
 # All time book search page
 
 [![Build Status](https://travis-ci.org/ferzerkerx/lucene-demo-frontend.svg?branch=master)](https://travis-ci.org/ferzerkerx/lucene-demo-frontend)
+[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=lucene-demo-frontend)](https://sonarcloud.io/dashboard/index/lucene-demo-frontend)
 
 ## Dependencies
 - Expects an endpoint on localhost:8080 implemented in this other repository: https://github.com/ferzerkerx/lucene-demo
