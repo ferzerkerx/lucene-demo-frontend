@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`searches the specified test 1`] = `
+Object {
+  "Id": "123",
+}
+`;
