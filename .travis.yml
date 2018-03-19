@@ -18,6 +18,7 @@ install:
   - "npm install -g snyk"
 
 script:
+  - "CI=true npm test --coverage"
   - "sonar-scanner"
   - "npm run build"
   - "snyk test"
