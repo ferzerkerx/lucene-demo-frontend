@@ -2,6 +2,11 @@
   "name": "lucene-demo-frontend",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3"
+  },
   "dependencies": {
     "fetch": "^1.1.0",
     "react": "^16.1.1",
@@ -13,5 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
