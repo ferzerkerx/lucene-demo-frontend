@@ -1,6 +1,6 @@
-const checkStatus = (response) => {
+const checkStatus = response => {
   if (response.status >= 200 && response.status < 300) {
-    return response
+    return response;
   }
 
   let error = new Error(response.statusText);
@@ -8,8 +8,8 @@ const checkStatus = (response) => {
   throw error;
 };
 
-const parseJSON = (response) => {
-  return response.json()
+const parseJSON = response => {
+  return response.json();
 };
 
-export {checkStatus, parseJSON}
+export { checkStatus, parseJSON };

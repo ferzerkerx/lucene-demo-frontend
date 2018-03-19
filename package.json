@@ -5,7 +5,8 @@
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3"
+    "enzyme-to-json": "^3.3.3",
+    "prettier": "1.11.1"
   },
   "dependencies": {
     "fetch": "^1.1.0",
@@ -17,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --single-quote --write 'src/**/*.js'"
   },
   "jest": {
     "snapshotSerializers": ["enzyme-to-json/serializer"],
