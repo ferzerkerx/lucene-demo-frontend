@@ -27,7 +27,7 @@ class App extends Component {
           </h1>
         </header>
         <p className="App-intro">Type any book you want.</p>
-        <form onSubmit={e => e.preventDefault()}>
+        <form>
           <input
             name="searchInput"
             type="text"
