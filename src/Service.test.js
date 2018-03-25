@@ -1,7 +1,6 @@
-import {Service} from './Service'
+import { Service } from './Service';
 
 beforeEach(function() {
-
   global.fetch = jest.fn().mockImplementation(() => {
     var p = new Promise((resolve, reject) => {
       resolve({
@@ -9,18 +8,16 @@ beforeEach(function() {
         status: 200,
         Id: '123',
         json: function() {
-          return {Id: '123'}
+          return { Id: '123' };
         }
       });
     });
 
     return p;
   });
-
 });
 
-
-it("searches the specified test", async function() {
+it('searches the specified book', async function() {
   const response = await Service('bookName');
   expect(response).toMatchSnapshot();
 });
