@@ -2,7 +2,7 @@ import { Service } from './Service';
 
 beforeEach(function() {
   global.fetch = jest.fn().mockImplementation(() => {
-    var p = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       resolve({
         ok: true,
         status: 200,
@@ -12,8 +12,6 @@ beforeEach(function() {
         }
       });
     });
-
-    return p;
   });
 });
 
