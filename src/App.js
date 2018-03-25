@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { results: undefined };
+    this.state = { results: null };
   }
 
   handleOnChange = evt => {
@@ -28,7 +28,11 @@ class App extends Component {
         </header>
         <p className="App-intro">Type any book you want.</p>
         <form onSubmit={e => e.preventDefault()}>
-          <input type="text" onChange={this.handleOnChange} />
+          <input
+            name="searchInput"
+            type="text"
+            onChange={this.handleOnChange}
+          />
         </form>
         <div className="results">{renderedResults}</div>
       </div>
@@ -41,7 +45,7 @@ class App extends Component {
       results &&
       results.map(book => {
         return (
-          <div className="book-result">
+          <div key={book.id} className="book-result">
             <span className="book-title">{book.title}</span> by{' '}
             <span className="author-name">{book.author}</span>
           </div>

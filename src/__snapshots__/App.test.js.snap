@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render compnent 1`] = `
+exports[`App.js should render component 1`] = `
 <div
   className="App"
 >
@@ -22,6 +22,7 @@ exports[`render compnent 1`] = `
     onSubmit={[Function]}
   >
     <input
+      name="searchInput"
       onChange={[Function]}
       type="text"
     />
@@ -29,5 +30,56 @@ exports[`render compnent 1`] = `
   <div
     className="results"
   />
+</div>
+`;
+
+exports[`App.js should render with results 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1
+      className="App-title"
+    >
+      Auto complete input backed by an endpoint using Lucene
+    </h1>
+  </header>
+  <p
+    className="App-intro"
+  >
+    Type any book you want.
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      name="searchInput"
+      onChange={[Function]}
+      type="text"
+    />
+  </form>
+  <div
+    className="results"
+  >
+    <div
+      className="book-result"
+      key="1"
+    >
+      <span
+        className="book-title"
+      >
+        bookTitle
+      </span>
+       by
+       
+      <span
+        className="author-name"
+      >
+        authorName
+      </span>
+    </div>
+  </div>
 </div>
 `;
