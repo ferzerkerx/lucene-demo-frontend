@@ -21,7 +21,6 @@ script:
   - "CI=true npm test -- --coverage"
   - "sonar-scanner"
   - "npm run build"
-  - "snyk test"
 
 after_success:
   - snyk monitor
