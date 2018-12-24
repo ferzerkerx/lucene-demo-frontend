@@ -15,8 +15,8 @@
     "react-scripts": "^2.1.2"
   },
   "resolutions": {
-    "**/url-parse": "^1.4.3 ",
-    "**/querystringify": "^2.0.0 "
+    "**/url-parse": "^1.4.3",
+    "**/querystringify": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
