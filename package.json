@@ -12,7 +12,7 @@
     "fetch": "^1.1.0",
     "react": "^16.3.3",
     "react-dom": "^16.3.3",
-    "react-scripts": "^2.1.5"
+    "react-scripts": "3.0.1"
   },
   "resolutions": {
     "**/url-parse": "^1.4.3",
@@ -26,7 +26,9 @@
     "format": "prettier --single-quote --write 'src/**/*.js'"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "coverageReporters": [
       "lcov"
     ]
